@@ -57,7 +57,8 @@ print("\nIPs Permitidas:")
 for ip in ordenar(autorizadas):print(f"[+] {etiqueta(ip)}: IP Permitida")
 
 print("\nIPs Denegadas:")
-if denegadas:for ip in ordenar(denegadas):print(f"[!] {etiqueta(ip)}: IP Denegada")
+if denegadas:
+    for ip in ordenar(denegadas):print(f"[!] {etiqueta(ip)}: IP Denegada")
 else:print("[✓] No se detectaron dispositivos no autorizados")
 
 if ausentes:
