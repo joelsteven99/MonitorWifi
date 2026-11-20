@@ -167,8 +167,8 @@ while True:
     print("  0. Salir")
     print("=" * 46)
 
-    try:opcion = input("Selecciona una opción: ").strip()
-        match opcion:
+    try:
+        match input("Selecciona una opción: ").strip():
             case "1":EscanearActual()
             case "2":EscanearEspecifica()
             case "3":MostrarResultados()
