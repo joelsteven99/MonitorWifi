@@ -171,12 +171,12 @@ while True:
     except (EOFError, KeyboardInterrupt):print("\n[!] Operación cancelada.");print("\nHasta luego.");break
 
     match opcion:
-        case 1:EscanearActual()
-        case 2:EscanearEspecifica()
-        case 3:MostrarResultados()
-        case 4:GuardarMonitor()
-        case 5:GuardarDetallado()
-        case 6:CambiarHilos()
-        case 7:CambiarArchivo()
-        case 0:print("Hasta luego.");break
+        case "1":EscanearActual()
+        case "2":EscanearEspecifica()
+        case "3":MostrarResultados()
+        case "4":GuardarMonitor()
+        case "5":GuardarDetallado()
+        case "6":CambiarHilos()
+        case "7":CambiarArchivo()
+        case "0":print("Hasta luego.");break
         case _:print("[!] Opción no válida.")
