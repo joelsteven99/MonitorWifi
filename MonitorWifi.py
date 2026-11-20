@@ -121,10 +121,10 @@ while True:
     try:opcion = input("Selecciona una opción: ").strip()
     except (EOFError, KeyboardInterrupt):print("\nHasta luego.");break
     match opcion:
-        case 1:ConfigurarRed()
-        case 2:ConfigurarArchivo()
-        case 3:ConfigurarSalida()
-        case 4:VerPermitidas()
-        case 5:Escanear()
-        case 0:print("Hasta luego.");break
+        case "1":ConfigurarRed()
+        case "2":ConfigurarArchivo()
+        case "3":ConfigurarSalida()
+        case "4":VerPermitidas()
+        case "5":Escanear()
+        case "0":print("Hasta luego.");break
         case _:print("[!] Opción no válida.")
