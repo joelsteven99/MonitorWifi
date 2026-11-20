@@ -118,13 +118,13 @@ while True:
     print("  0. Salir")
     print("=" * 46)
 
-    try:
-        match opcion = input("Selecciona una opción: "):
-            case 1:ConfigurarRed()
-            case 2:ConfigurarArchivo()
-            case 3:ConfigurarSalida()
-            case 4:VerPermitidas()
-            case 5:Escanear()
-            case 0:print("Hasta luego.");break
+    try: opcion = input("Selecciona una opción: ").strip()
+        match opcion:
+            case "1":ConfigurarRed()
+            case "2":ConfigurarArchivo()
+            case "3":ConfigurarSalida()
+            case "4":VerPermitidas()
+            case "5":Escanear()
+            case "0":print("Hasta luego.");break
             case _:print("[!] Opción no válida.")
     except (EOFError, KeyboardInterrupt):print("\nHasta luego.");break
