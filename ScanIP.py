@@ -150,7 +150,7 @@ def GuardarDetallado():
 
 while True:
     print("\n" + "=" * 46)
-    print("        LISTADOR DE IPs EN LA RED")
+    print("        SCAN DE IPs EN LA RED")
     print("=" * 46)
     print(f"  Hilos   : {config['hilos']}")
     print(f"  Archivo : {config['archivo']}")
